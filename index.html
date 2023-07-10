@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" sizes="65x65" type="image/png" href="./images/favicon.png">
+
+  <!-- font -->
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.cdnfonts.com/css/recoleta" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/beliau" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/trial-oceanic" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/fifty-holliwing" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="./js/jquery-3.7.0.min.js"></script>
+
+  <!-- mousewheel -->
+  <script src="./js/jquery.mousewheel.min.js"></script>
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+  <!-- perfect-scrollbar -->
+  <script src="assets/js/perfect-scrollbar-min.js"></script>
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+
+  <!-- script -->
+  <script src="./js/script.js" defer></script>
+  <title>Hello, I’m Giyeon!</title>
+</head>
+
+
+<body>
+  <!-- //mouse cursor -->
+  <div id="circleCursor"></div>
+
+  <header class="header engA">
+    <div class="lnb">
+      <ul>
+        <li class="kakao">
+          <a href="#"><i class="fas fa-mobile-alt"></i></a>
+        </li>
+        <li class="github">
+          <a href="https://github.com/yeonnngi" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </div><!-- //lnb -->
+
+    <div class="header_title">
+      <div class="titleCircle"></div>
+      <!-- <div class="title_icon">
+        <img src="./images/smile_emoticon.png" alt="smile">
+      </div> -->
+      <a href="./index.html">
+        <p class="main_title">
+          <!-- 👋☘︎ܤ -->Hello, I’m Giyeon !
+        </p>
+      </a>
+    </div><!-- //header_title -->
+
+    <div class="time">
+      <p class="now"><span>now</span></p>
+      <p id="clock" class="clock engA">00:00:00</p>
+    </div>
+  </header>
+
+  <div id="wrapper">
+    <div id="page" class="container home active">
+      <div class="lnb_preview home">
+        <p class="txt_preview engA">Hello, I’m Giyeon!</p>
+        <div class="circle"></div>
+      </div>
+
+      <div class="container_inner engA">
+        <div class="content">
+          <div class="txtA_box">
+            <div class="txtA">
+              <p class="arrow">[</p>
+              <h1 class="kor"><span>그릇</span> <span class="small">[명사]</span><br />어떤 일을 해 나갈 만한 도량이나 능력
+              </h1>
+              <p class="arrow">]</p>
+            </div><!-- //txtA -->
+          </div><!-- //txtA_box -->
+
+          <div class="txtB_box">
+            <div class="txtB kor">
+              <h1>안녕하세요.<br /><span>프론트엔드 개발자</span>를 향해 <span>도량</span>을 넓히며<br />하루하루 <span>성장</span>해가고
+                있는 <span>이기연입니다.</span>
+              </h1>
+            </div><!-- //txtB -->
+          </div><!-- //txtB_box -->
+
+          <div class="txtC kor">
+            <p>본 사이트는 상업적 목적이 아닌<br>
+              개인포트폴리오 사이트로 제작되었습니다.<br>
+              일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.</p>
+          </div><!-- //txtB -->
+
+          <div class="bowl_img">
+            <img src="./images/bowl_small.png" alt="bowl_small">
+          </div>
+
+          <div id="ballContainer">
+            <div id="ball1" class="ball ballA" style="background-color: #d9423b; left: 110px;"></div>
+            <div id="ball2" class="ball ballC" style="background-color: #f4be61; left: 310px;"></div>
+            <div id="ball3" class="ball ballB" style="background-color: #fac5b7; left: 200px;"></div>
+            <div id="ball4" class="ball ballD" style="background-color: #34a9bd; left: 400px;"></div>
+          </div><!-- //ballContainer -->
+
+          <div class="next_notice blink">
+            <p><i class="fas fa-arrow-right"></i><br />
+              click about</p>
+          </div><!-- //next_notice -->
+        </div><!-- //content -->
+      </div><!-- //container_inner -->
+    </div><!-- //container HOME -->
+
+
+    <div id="about" class="container about">
+      <div class="lnb_preview about">
+        <p class="txt_preview engA">About</p>
+        <div class="circle"></div>
+      </div><!-- //lnb_preview -->
+
+      <div class="container_inner">
+        <!-- <div class="path">
+          <p class="txt_preview">About</p>
+          <div class="circle"></div>
+        </div> -->
+        <div id="fullPage" class="fullPage">
+          <section class="page1 scroll_content">
+            <div class="content engA">
+              <h1 class="path">About Me</h1>
+
+              <div class="content_detail">
+                <div class="profile_img">
+                  <img src="./images/main.png" alt="profile_img">
+                </div>
+
+                <div class="profile_txt">
+                  <ul class="aboutMe">
+                    <li>- 🖥️ 4년 8개월간 콘텐츠 기획과 디자인 시안을 제작했습니다.</li>
+                    <li>- 📝 7개월간의 프론트엔드 교육 과정을 블로그에 기록해왔습니다.</li>
+                    <li>- 🌳 자연과 함께일 때 더욱 행복해집니다.</li>
+                    <li>- 🎨 새로움을 창조하는 것에 기쁨을 느낍니다.</li>
+                    <li>- 🌏 방구석 여행을 좋아합니다.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(여행이 어려울 때는
+                      여행 다큐멘터리로 대신합니다. 또 다른 즐거움입니다.🛣️)</li>
+                  </ul>
+
+                  <div class="aboutMe_detail">
+                    <ul class="aboutMe_title">
+                      <li>NAME</li>
+                      <li>BIRTH-DATE</li>
+                      <li>ADDRESS</li>
+                      <li>EMAIL</li>
+                      <li>PHONE</li>
+                      <li>GITHUB</li>
+                      <li>BLOG</li>
+                    </ul>
+
+                    <ul class="aboutMe_line">
+                      <li>
+                        <div class="line"></div>
+                      </li>
+                      <li>
+                        <div class="line"></div>
+                      </li>
+                      <li>
+                        <div class="line"></div>
+                      </li>
+                      <li>
+                        <div class="line"></div>
+                      </li>
+                      <li>
+                        <div class="line"></div>
+                      </li>
+                      <li>
+                        <div class="line"></div>
+                      </li>
+                      <li>
+                        <div class="line"></div>
+                      </li>
+                    </ul>
+
+                    <ul class="aboutMe_content">
+                      <li>이기연</li>
+                      <li>1992 . 06 . 16</li>
+                      <li>부산광역시 동래구 온천3동 (부산, 경남 거주 가능)</li>
+                      <li>breeana_@naver.com</li>
+                      <li>+82-10-5001-0516</li>
+                      <li>
+                        <a href="http://github.com/yeonnngi" target="_blank">http://github.com/yeonnngi</a>
+                      </li>
+                      <li>
+                        <a href="http://www.blog.naver.com/breeana_"
+                          target="_blank">http://www.blog.naver.com/breeana_</a>
+                      </li>
+                    </ul>
+                  </div><!-- //aboutMe_detail -->
+                </div><!-- //profile_txt -->
+
+                <div class="next_notice blink aboutSD">
+                  <div class="scroll_icon">
+                    <img src="./images/scroll_down.png" alt="scroll_down">
+                  </div><!-- //scrollDw_icon -->
+                  <p>scroll down</p>
+                </div><!-- //next_notice -->
+
+              </div><!-- //content_detail -->
+            </div><!-- //content -->
+          </section><!-- //page1 -->
+
+
+          <section class="page2 scroll_content">
+            <div class="content engA">
+              <h1 class="path">Experience</h1>
+
+              <div class="exper_box engA">
+                <div class="exper_detail">
+                  <h2 class="engB">Work Experience</h2>
+                  <ul class="exper">
+                    <li>
+                      <h3>OOOOO</h3>
+                      <h4>제품기획관리팀 ( 2022. 04 - 2022. 10 )</h4>
+                      <p>- VR 콘텐츠 기획 및 품질 관리 업무</p>
+                    </li>
+
+                    <li>
+                      <h3>OOOOOO</h3>
+                      <h4>고객가치창조부서 ( 2018. 07 - 2021. 06 )</h4>
+                      <p>- 디자인 콘텐츠 제작</p>
+                      <p>- 사이니지 송출 일정 편성</p>
+                      <p>- 템플릿 개발 디자인 가이드 작업</p>
+                    </li>
+
+                    <li>
+                      <h3>OOOOO</h3>
+                      <h4>마케팅팀 ( 2016. 02 - 2017. 02 )</h4>
+                      <p>- 홍보 및 시각물 제작·배포·조정 업무</p>
+                    </li>
+                  </ul>
+                </div><!-- //exper_detail -->
+
+                <div class="study_detail">
+                  <h2 class="engB">Education</h2>
+                  <ul class="study">
+                    <li>
+                      <h3>그린컴퓨터 아카데미<br>프론트엔드 개발자 양성과정</h3>
+                      <h4>2011. 03 - 2015. 02</h4>
+                    </li>
+
+                    <li>
+                      <h3>OOOOO OOOO학과 졸업</h3>
+                      <h4>2011. 03 - 2015. 02</h4>
+                    </li>
+
+                    <li>
+                      <h3>OO고등학교 졸업</h3>
+                      <h4>2008. 03 - 2011. 02</h4>
+                    </li>
+                  </ul><!-- //study -->
+                </div><!-- //study_detail -->
+
+                <div class="certificate_detail">
+                  <h2 class="engB">Certificate</h2>
+                  <ul class="certif">
+                    <li>
+                      <h3>정보처리기사(필기)</h3>
+                      <h4>2023. 03</h4>
+                    </li>
+
+                    <li>
+                      <h3>그래픽기술자격<br>일러스트(GTQi) 1급</h3>
+                      <h4>2015. 11</h4>
+                    </li>
+
+                    <li>
+                      <h3>컴퓨터그래픽스운용기능사</h3>
+                      <h4>2015. 06</h4>
+                    </li>
+
+                    <li>
+                      <h3>그래픽기술자격(GTQ) 1급</h3>
+                      <h4>2013. 09</h4>
+                    </li>
+                  </ul><!-- //certif -->
+                </div><!-- //certificate_detail -->
+              </div><!-- //exper_box -->
+
+              <div class="next_notice aboutSU">
+                <div class="scroll_icon">
+                  <img src="./images/scroll_up.png" alt="scroll_up">
+                </div><!-- //scrollDw_icon -->
+                <p>scroll up</p>
+              </div><!-- //next_notice -->
+
+              <div class="next_notice nxtGallery">
+                <p><i class="fas fa-arrow-right"></i><br />
+                  click gallery</p>
+              </div><!-- //next_notice -->
+
+            </div><!-- //content -->
+          </section><!-- //page2 -->
+        </div><!-- //#full_page -->
+      </div><!-- //container_inner -->
+    </div><!-- //container about -->
+
+
+    <div id="gallery" class="container gallery">
+      <div class="lnb_preview gallery">
+        <p class="txt_preview engA">Gallery</p>
+        <div class="circle"></div>
+      </div>
+
+      <div class="container_inner">
+        <div class="content engA">
+          <h1 class="path">Gallery</h1>
+
+          <div class="next_notice nxtSkills">
+            <p><i class="fas fa-arrow-right"></i><br />
+              click skills</p>
+          </div><!-- //next_notice -->
+
+        </div><!-- //content -->
+      </div><!-- //container_inner -->
+    </div><!-- //container gallery -->
+
+
+    <div id="skills" class="container skills">
+      <div class="lnb_preview skills">
+        <p class="txt_preview engA">Skills</p>
+        <div class="circle"></div>
+      </div>
+
+      <div class="container_inner">
+        <div class="content engA">
+          <h1 class="path">Skills</h1>
+
+          <div class="skill_box">
+
+            <div class="language skill_title">
+              <h5>Language</h5>
+              <ul>
+                <li>
+                  <div class="icon_img">
+                    <img src="./images/html.png" alt="html">
+                  </div>
+                  <p>HTML</p>
+                </li>
+
+                <li>
+                  <div class="icon_img">
+                    <img src="./images/css.png" alt="css">
+                  </div>
+                  <P>CSS</P>
+                </li>
+
+                <li>
+                  <div class="icon_img">
+                    <img src="./images/js.png" alt="js">
+                  </div>
+                  <P>JavaScript</P>
+                </li>
+              </ul>
+            </div><!-- //language -->
+
+
+            <div class="frameWork skill_one">
+              <h5>Framework</h5>
+              <div class="frameWork_box icon_box">
+                <div class="icon_img">
+                  <img src="./images/react.png" alt="react">
+                </div><!-- //icon_img -->
+                <p>React</p>
+              </div><!-- //frameWork_box -->
+            </div><!-- //frameWork -->
+
+
+            <div class="library skill_title">
+              <h5>Library</h5>
+              <ul>
+                <li>
+                  <div class="icon_img">
+                    <img src="./images/scss.png" alt="scss">
+                  </div>
+                  <p>SCSS</p>
+                </li>
+
+                <li>
+                  <div class="icon_img">
+                    <img src="./images/jquery.png" alt="jquery">
+                  </div>
+                  <P>jQuery</P>
+                </li>
+              </ul>
+            </div><!-- //language -->
+
+
+            <div class="ide skill_one">
+              <h5>IDE</h5>
+              <div class="ide_box icon_box">
+                <div class="icon_img">
+                  <img src="./images/vscode.png" alt="vscode">
+                </div><!-- //icon_img -->
+                <p>VSCode</p>
+              </div><!-- //fide_box -->
+            </div><!-- //ide -->
+          </div><!-- //skill_box -->
+
+
+          <div class="etc">
+            <h5>ETC</h5>
+            <ul class="etc_box icon_box">
+              <li>
+                <div class="icon_img">
+                  <img src="./images/github.png" alt="github">
+                </div>
+                <P>GITHUB</P>
+              </li>
+
+              <li>
+                <div class="icon_img">
+                  <img src="./images/adobe_xd.png" alt="adobe_xd">
+                </div>
+                <P>Adobe XD</P>
+              </li>
+
+              <li>
+                <div class="icon_img">
+                  <img src="./images/figma.png" alt="figma">
+                </div>
+                <P>Figma</P>
+              </li>
+
+              <li>
+                <div class="icon_img">
+                  <img src="./images/photoshop.png" alt="photoshop">
+                </div>
+                <P>Photoshop</P>
+              </li>
+
+              <li>
+                <div class="icon_img">
+                  <img src="./images/adobe_Illustrator.png" alt="adobe_Illustrator">
+                </div>
+                <P>Photoshop</P>
+              </li>
+            </ul>
+          </div>
+
+          <div class="next_notice nxtProject">
+            <p><i class="fas fa-arrow-right"></i><br />
+              click projects</p>
+          </div><!-- //next_notice -->
+
+        </div><!-- //content -->
+      </div><!-- //container_inner -->
+    </div><!-- //container skills -->
+
+
+    <div id="projects" class="container projects">
+      <div class="lnb_preview projects">
+        <p class="txt_preview engA">Projects</p>
+        <div class="circle"></div>
+      </div>
+
+      <div class="container_inner">
+        <div class="content engA">
+          <h1 class="path">Projects</h1>
+
+          <div class="bowl_img">
+            <img src="./images/bowl_wide.png" alt="bowl_wide">
+          </div>
+
+          <div class="ballContainer engA">
+            <div class="proBall ballA">
+              <div class="ballA_inner ball_inner">
+                <h4>React</h4>
+                <div class="login_img project_img">
+                  <img src="" alt="react_img">
+                </div><!-- //login_img -->
+              </div><!-- //ballA_inner -->
+            </div><!-- //ballA -->
+
+            <div class="proBall ballB">
+              <a href="./detail_hd.html" target="_blank">
+                <div class="ballB_inner ball_inner">
+                  <h4>Haggen-Daz</h4>
+                  <div class="haggendaz_img project_img">
+                    <img src="./images/haggendaz_pc.png" alt="haggendaz_pc">
+                  </div><!-- //haggendaz_img -->
+                </div><!-- //ballB_inner -->
+              </a>
+            </div><!-- //ballB -->
+
+            <div class="proBall ballC">
+              <a href="./detail_ik.html" target="_blank">
+                <div class="ballC_inner ball_inner">
+                  <h4>일광전구</h4>
+                  <div class="ik_img project_img">
+                    <img src="./images/ik_main.png" alt="ik_main">
+                  </div><!-- //ik_img -->
+                </div><!-- //ballC_inner -->
+              </a>
+            </div><!-- //ballC -->
+
+            <div class="proBall ballD">
+              <a href="./detail_lg.html" target="_blank">
+                <div class="ballD_inner ball_inner">
+                  <h4>Login System</h4>
+                  <div class="react_img project_img">
+                    <img src="./images/login_main.png" alt="login_main">
+                  </div><!-- //login_img -->
+                </div><!-- //ballD_inner -->
+              </a>
+            </div><!-- //ballD -->
+          </div><!-- //ballContainer -->
+
+          <div class="next_notice nxtContact">
+            <p><i class="fas fa-arrow-right"></i><br />
+              click contact</p>
+          </div><!-- //next_notice -->
+        </div><!-- //content -->
+      </div><!-- //container_inner -->
+    </div><!-- //container projects -->
+
+
+    <div id="contact" class="container contact engA">
+      <div class="lnb_preview contact">
+        <p class="txt_preview engA">Contact</p>
+        <div class="circle"></div>
+      </div>
+
+      <div class="container_inner">
+        <div class="content engA">
+          <h1 class="path">Contact Me!</h1>
+
+          <div class="contactMe_txt">
+            <p class="loveTalk">I'd love to talk.</p>
+            <p class="blink contactIcon arrowRight"><i class="fas fa-arrow-right"></i></p>
+            <!-- <p class="blink contactIcon"><i class="fas fa-arrow-down"></i></p> -->
+
+            <ul>
+              <li class="contactCall"><i class="fas fa-phone"></i>&nbsp; +82 10-5001-0516</li>
+              <li class="contactMail"><i class="fas fa-envelope-open-text"></i>&nbsp; breeaaana@gmail.com</li>
+            </ul>
+            <h2>THANKS FOR YOUR VISIT.</h2>
+          </div>
+
+
+          <div class="email">
+            <form id="contact-form">
+              <div class="email_name">
+                <p>Name</p>
+                <input type="text" id="name" name="name" placeholder="성함을 입력해주세요.">
+              </div>
+
+              <div class="email_email">
+                <p>Email</p>
+                <input type="email" id="email" name="email" placeholder="메일 주소를 입력해주세요.">
+              </div>
+
+              <div class="email_number">
+                <p>Phone Number</p>
+                <input type="text" id="number" name="number" placeholder="연락처를 입력해주세요.">
+              </div>
+
+              <div class="email_message">
+                <p>Message</p>
+                <textarea id="message" name="message" class="engA" placeholder="내용을 입력해주세요."></textarea>
+              </div>
+
+              <button type="submit" class="contact_btn"><i class="fas fa-envelope"></i><br>Send</button>
+            </form>
+          </div><!-- //email -->
+        </div><!-- //content -->
+      </div><!-- //container_inner -->
+    </div><!-- //container contact -->
+  </div><!-- //#wrapper -->
+</body>
+</html>
