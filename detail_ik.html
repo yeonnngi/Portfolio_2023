@@ -106,7 +106,7 @@
                 </div><!-- //detail_img -->
 
                 <div class="code_img">
-                  <img src="./images/carbon_ik_oprionForEach.png" alt="carbon_ik_oprionForEach">
+                  <img src="./images/carbon_ik_optionForEach.png" alt="carbon_ik_oprionForEach">
                 </div><!-- //code_img -->
               </div><!-- //detail_img -->
             </li><!-- //proOption -->
@@ -232,6 +232,100 @@
   </div><!-- //haggen_modal -->
 
 
+  <div class="react_modal modal">
+    <div class="modal_code">
+      <div class="modal_code_wrap">
+        <div class="reactCode_close code_close">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </div><!-- //code_close -->
+
+        <div class="code_tab engA">
+          <ul>
+            <li class="router_title reTab_on">React Router</li>
+            <li class="layout_title kor">Layout</li>
+            <li class="store_title kor">Store</li>
+            <li class="state_title">useState</li>
+            <li class="cart_title kor">Cart</li>
+          </ul>
+        </div><!-- //code_tab -->
+
+        <div class="code_detail kor">
+          <ul>
+            <li class="router reCode_on">
+              <p>- Router를 통해 각 페이지 구조에 맞는 URL을 배치하고 각 URL에 따라 선택된 페이지가 렌더링 될 수 있도록 구조화</p>
+              <div class="detail_img">
+                <div class="code_img">
+                  <img src="./images/carbon_react_router.png" alt="carbon_react_router">
+                </div><!-- //code_img -->
+              </div><!-- //detail_img -->
+            </li><!-- //router -->
+
+
+            <li class="layout">
+              <p>- 상태에 따라 어떤 페이지가 영향을 받는지 페이지를 컴포넌트로 분리하고, 서로의 상태를 공유하여 상태변화를 확인할 수 있도록 레이아웃을 설계</p>
+              <div class="detail_img">
+                <div class="site_img">
+                  <img src="./images/react_layout.gif" alt="login_totalTerms">
+                </div><!-- //detail_img -->
+
+                <div class="code_img">
+                  <img src="./images/carbon_react_route.png" alt="carbon_react_route">
+                </div><!-- //code_img -->
+              </div><!-- //detail_img -->
+            </li><!-- //layout -->
+
+
+            <li class="store">
+              <p>- 상태관리 라이브러리인 Redux를 사용해 전역적인 상태 관리가 가능하도록 구현 (Redux의 state 상태가 저장되고 관리되는 저장소의 역할)</p>
+              <p>- createSlice 메서드를 활용하여 Reducer를 연결해 Store를 생성</p>
+              <p>- 상품 수량 변경 및 추가, 삭제와 같은 함수를 생성해 장바구니 저장소 기능 구현 및 상태변화 관리</p>
+
+              <div class="detail_img">
+                <div class="code_img">
+                  <img src="./images/carbon_react_store.png" alt="carbon_login_join">
+                </div><!-- //code_img -->
+              </div><!-- //detail_img -->
+            </li><!-- //store -->
+
+
+            <li class="state">
+              <p>- 서로의 상태를 공유하여 상태변화를 확인하도록 구현</p>
+              <p>- onClick 이벤트를 통해 장바구니 버튼을 클릭하면 해당 물품의 수량을 상태로 전달하여 장바구니에 추가할 수 있도록 구현<br><br>&nbsp;&nbsp;&nbsp;<span>상태 변경이 필요한 이벤트 발생 <i class="fas fa-arrow-alt-circle-right"></i> 변경될 상태에 대한 정보가 담긴 Action 객체 생성 <i class="fas fa-arrow-alt-circle-right"></i> Action 객체는 Dispatch 함수의 인자로 전달<br>&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i> Dispatch 함수는 Action 객체를 Reducer 함수로 전달 <i class="fas fa-arrow-alt-circle-right"></i> Reducer 함수는 Action 객체의 값을 확인 후 그 값에 따라 전역 상태 저장소 Store의 상태를 변경<br>&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i> 상태가 변경되면 React는 화면을 다시 렌더링</span>
+              </p>
+              <div class="detail_img">
+                <div class="site_img">
+                  <img src="./images/react_state.gif" alt="react_state">
+                </div><!-- //detail_img -->
+
+                <div class="code_img">
+                  <img src="./images/carbon_react_useState.png" alt="carbon_react_route">
+                </div><!-- //code_img -->
+              </div><!-- //detail_img -->
+            </li><!-- //state -->
+
+
+            <li class="cart">
+              <p>- Store에서 생성한 상품 수량 변경 및 추가, 삭제 등 함수를 가져와 장바구니 페이지에서 사용할 수 있도록 구현하여 상태관리를 통해 동적으로 데이터 구현</p>
+              <p>- 장바구니에 담긴 상품의 금액에 따라 배송비 여부가 달라지도록 구현</p>
+              <p>- 장바구니에 담긴 상품 리스트의 길이를 기준으로 분기처리하여 Header 내 장바구니 아이콘에 개수가 표시되도록 구현<br>&nbsp;&nbsp;&nbsp;<span>(장바구니에 담긴 상품 리스트의 길이가 0 이상일 경우 list.length, 0일 경우 null 처리)</span></p>
+              <div class="detail_img">
+                <div class="site_img">
+                  <img src="./images/react_cart.gif" alt="react_cart">
+                  <img src="./images/carbon_react_cartHeader.png" alt="carbon_react_cartHeader">
+                </div><!-- //detail_img -->
+
+                <div class="code_img">
+                  <img src="./images/carbon_react_cart.png" alt="carbon_login_join">
+                </div><!-- //code_img -->
+              </div><!-- //detail_img -->
+            </li><!-- //cart -->
+          </ul>
+        </div><!-- //code_detail -->
+      </div><!-- //modal_code_wrap -->
+    </div><!-- //modal_code -->
+  </div><!-- //login_modal -->
+
+
 
   <div class="login_modal modal">
     <div class="modal_proposal">
@@ -303,7 +397,6 @@
                 </div><!-- //code_img -->
               </div><!-- //detail_img -->
             </li><!-- //join -->
-
           </ul>
         </div><!-- //code_detail -->
       </div><!-- //modal_code_wrap -->
@@ -323,12 +416,12 @@
             <a href="#">Haggen Daz</a>
           </li>
 
-          <li class="login_title">
-            <a href="#">Login System</a>
-          </li>
-
           <li class="react_title">
             <a href="#">React</a>
+          </li>
+
+          <li class="login_title">
+            <a href="#">Login System</a>
           </li>
         </ul>
       </div><!-- //lnb -->
@@ -349,7 +442,6 @@
     <div class="container">
       <div class="container_inner engA">
         <div class="content">
-
 
           <div class="ikLightening project on">
             <div class="project_box">
@@ -381,15 +473,19 @@
                         <li>2023. 05 ~ 2023. 06 (4주)</li>
                         <li class="insight">
                           <ul>
-                            <li>- &nbsp;데이터베이스에 저장된 상품의 정보를 <span>동적 데이터로 생성하여
-                                나열하며</span><br><span>&nbsp;&nbsp;&nbsp;&nbsp;데이터가 채워지는 구조를 파악</span>할 수 있었습니다.
                             <li>
-                              - &nbsp;<span>sort 및 filter 함수</span>를 통해 다양한 정렬 기능을 구현할 수 있었습니다.
+                              <i class="fas fa-minus"></i>
+                              <p>데이터베이스에 저장된 상품의 정보를 <span>동적 데이터로 생성하여 나열하며</span> <span>데이터가 채워지는 구조를 파악</span>할 수 있었습니다.</p>
                             </li>
 
                             <li>
-                              - &nbsp;<span>12 column</span>을 사용한 다양한 <span> 레이아웃 및 콘텐츠 배치</span>를 통해 사용자의
-                              <span>&nbsp;&nbsp;&nbsp;&nbsp;사용성을 고려한 레이아웃</span>이 무엇인지 공부할 수 있었습니다.
+                              <i class="fas fa-minus"></i>
+                              <p><span>sort 및 filter 함수</span>를 통해 다양한 정렬 기능을 구현할 수 있었습니다.</p>
+                            </li>
+
+                            <li>
+                              <i class="fas fa-minus"></i>
+                              <p><span>12 column</span>을 사용한 다양한 <span>레이아웃 및 콘텐츠 배치</span>를 통해 사용자의 <span>사용성을 고려한 레이아웃</span>이 무엇인지 공부할 수 있었습니다.</p>
                             </li>
                           </ul>
                         </li><!-- //insight -->
@@ -411,10 +507,7 @@
 
                     <div class="concept_bottom">
                       <h3 class="concept_title">Concept</h3>
-                      <p class="kor concept_detail"><span>팀프로젝트</span>로 진행했던 작업입니다.<br>일광전구 기존 사이트의<span>불안정한
-                          레이아웃</span>으로 인해 <span>제품 정보에 대한 접근성</span>이 떨어진다는 결과를 팀원들과 함께<br>도출하게 되었고, 기존 사이트의 <span>전반적인
-                          사용성을 개선</span>해보면 좋을 것 같다는 생각으로 주제를 선정하게 되었습니다.<br><br>무엇보다 사용성에 집중하여 <span>정렬기능</span> 및
-                        <span>소비자의 시선 이동</span>에 맞춘 다양한 기능들을 구현해 보았습니다.</p>
+                      <p class="kor concept_detail"><span>팀프로젝트</span>로 진행했던 작업입니다.<br><br>일광전구 기존 사이트의<span> 불안정한 레이아웃</span>으로 인해 <span>제품 정보에 대한 접근성</span>이 떨어진다는 결과를 팀원들과 함께<br>도출하게 되었고, 기존 사이트의 <span>전반적인 사용성을 개선</span>해보면 좋을 것 같다는 생각으로 주제를 선정하게 되었습니다.<br>무엇보다 사용성에 집중하여 <span>정렬기능</span> 및 <span>소비자의 시선 이동</span>에 맞춘 다양한 기능들을 구현해 보았습니다.</p>
                     </div><!-- //concept_bottom -->
                   </div><!-- //concept_inner -->
 
@@ -457,21 +550,19 @@
                         <li>메인 페이지,&nbsp; 카테고리 서브 페이지</li>
                         <li><span class="reponsive">반응형</span>&nbsp; PC, &nbsp;Tablet, &nbsp;Mobile</li>
                         <li>PC : 1180px / Tablet : 768px / Mobile : 100%</li>
-                        <li><span class="html lang">HTML5</span>, &nbsp;<span class="css lang">CSS3</span>, &nbsp;<span
-                            class="jQuery lang">jQuery</span>
+                        <li><span class="html lang">HTML5</span>, &nbsp;<span class="css lang">CSS3</span>, &nbsp;<span class="jQuery lang">jQuery</span>
                         </li>
                         <li>2023. 04 ~ 2023. 05 (3주)</li>
                         <li class="insight">
                           <ul>
-                            <li>- &nbsp;움직임이 있는 모든 작업을 CSS로 구현한 후 <span>jQuery로
-                                간편화</span>하는<br>&nbsp;&nbsp;&nbsp;&nbsp;작업을
-                              통해 CSS와 제이쿼리가 가진
-                              움직임을 구현하는 방법들을<br>&nbsp;&nbsp;&nbsp;&nbsp;더욱 잘
-                              이해할 수
-                              있었습니다.</li>
                             <li>
-                              - &nbsp;반응형 프로젝트로 <span>기기별 해상도</span>를 파악하는데 좋은 공부가
-                              되었으며<br>&nbsp;&nbsp;&nbsp;&nbsp;<span>미디어쿼리</span> 기능과 친해질 수 있었습니다.
+                              <i class="fas fa-minus"></i>
+                              <p>움직임이 있는 모든 작업을 CSS로 구현한 후 <span>jQuery로 간편화</span>하는 작업을 통해 CSS와 제이쿼리가 가진 움직임을 구현하는 방법들을 더욱 잘 이해할 수 있었습니다.</p>
+                            </li>
+
+                            <li>
+                              <i class="fas fa-minus"></i>
+                              <p>반응형 프로젝트로 <span>기기별 해상도</span>를 파악하는데 좋은 공부가 되었으며 <span>미디어쿼리</span> 기능과 친해질 수 있었습니다.</p>
                             </li>
                           </ul>
                         </li><!-- //insight -->
@@ -493,12 +584,8 @@
 
                     <div class="concept_bottom">
                       <h3 class="concept_title">Concept</h3>
-                      <p class="kor concept_detail">우리와 친숙한 브랜드 중 운영되고 있는 사이트는 다소 친절하지 않은 곳을 선정하여 <span>반응형 리뉴얼
-                          작업</span>을 진행했습니다.<br>하겐다즈 기존 웹 사이트를 리뉴얼한 프로젝트로 <span>기획안부터 디자인 시안, 프로토타입까지 모두 혼자 힘으로</span>
-                        해보았던
-                        작업입니다.<br><br>
-                        <!-- 메인 페이지와 상품 카테고리를 소개하는 서브페이지로 구축하였고, jQuery와 플러그인을 활용해 각 요소의 움직임을 간결하게 표현할 수 있었습니다.  -->작업에
-                        쓰인 이미지들은 <span>모두 직접 편집 및 재가공</span>한 이미로 사용하였습니다.</p>
+                      <p class="kor concept_detail">
+                        <span>반응형</span> 프로젝트 작업입니다.<br><br>우리와 친숙한 브랜드 중 운영되고 있는 사이트는 다소 친절하지 않은 브랜드를 선정하게 되었고,<br>하겐다즈 기존 웹 사이트를 리뉴얼한 프로젝트로 <span>기획안부터 디자인 시안, 프로토타입까지 모두 혼자 힘으로</span> 해보았던 작업입니다.<br>작업에 쓰인 이미지들은 <span>모두 직접 편집 및 재가공</span>한 이미지로 사용하였습니다.</p>
                     </div><!-- //concept_bottom -->
                   </div><!-- //concept_inner -->
 
@@ -514,18 +601,89 @@
                 </div><!-- //hdConcept -->
               </div><!-- //bottomArea -->
             </div><!-- //project_box -->
-
-            <!--  <div class="bottom">
-              <div class="mainPage">
-                <div class="before">
-                  <img src="./images/haggendaz_before_pc_full.png" alt="haggendaz_before_pc">
-                </div>
-                <div class="after">
-                  <img src="./images/haggendaz_pc_full.png" alt="haggendaz_pc_full">
-                </div>
-              </div>
-            </div> //bottom -->
           </div><!-- //project haggenDaz -->
+
+
+
+          <div class="react project">
+            <div class="project_box">
+              <div class="topArea">
+                <div class="topArea_inner">
+                  <div class="project_img top_left">
+                    <img src="./images/react_v2.png" alt="react">
+                  </div>
+
+                  <div class="top_right kor">
+                    <div class="right_box">
+                      <ul class="right_title">
+                        <li>개발범위</li>
+                        <li>디바이스</li>
+                        <li>해상도</li>
+                        <li>개발언어</li>
+                        <li>소요시간</li>
+                        <li>인사이트</li>
+                      </ul>
+
+                      <ul class="right_detail">
+                        <li>메인 페이지,&nbsp; 서브 페이지,&nbsp; 디테일 페이지,&nbsp; 장바구니 페이지</li>
+                        <li><span class="reponsive">적응형</span>&nbsp; PC</li>
+                        <li>Full Page</li>
+                        <li>
+                          <span class="react lang">React</span>, &nbsp;<span class="css lang">CSS</span>, &nbsp;<span class="jsx lang">JSX</span>, &nbsp;<span class="node lang">NodeJS</span>, &nbsp;<span class="boot lang">React Bootstrap</span>
+                        </li>
+                        <li>2023. 07 (1주)</li>
+                        <li class="insight">
+                          <ul>
+                            <li>
+                              <i class="fas fa-minus"></i>
+                              <p><span>Router, Routes, Route</span>로 페이지, 컴포넌트 및 데이터 경로 설정을 구조화할 수 있었습니다.</p>
+                            </li>
+
+                            <li>
+                              <i class="fas fa-minus"></i>
+                              <p><span>useDispatch</span>로 액션함수를 실행시키고 액션함수의 실행으로 state를 변경 및 저장할 수 있었습니다.</p>
+                            </li>
+
+                            <li>
+                              <i class="fas fa-minus"></i>
+                              <p>상태 관리 라이브러리인 <span>Redux Toolkit</span>을 사용하여 상품 수량 변경 및 추가, 삭제와 같은 장바구니 저장소 기능을 구현할 수 있었습니다.</p>
+                            </li>
+                          </ul>
+                        </li><!-- //insight -->
+                      </ul><!-- //left_detail -->
+                    </div><!-- //left_box -->
+                  </div><!-- //top_left -->
+                </div><!-- //topArea_inner -->
+              </div><!-- //topArea -->
+
+              <div class="bottomArea">
+                <div class="hdConcept concept">
+                  <div class="concept_inner">
+                    <div class="concept_top">
+                      <h1>React</h1>
+                      <h2 class="kor">적응형 웹사이트 리뉴얼</h2>
+                    </div><!-- //concept_top -->
+
+                    <div class="concept_bottom">
+                      <h3 class="concept_title">Concept</h3>
+                      <p class="kor concept_detail">
+                        <span>React</span>를 활용하여 작업한 프로젝트입니다.<br><br>리액트를 활용해 SPA(Single Page Application)의 단일 페이지라는 이점을 살려 페이지를 구현할 수 있었습니다.<br>리액트로 작업한 첫 작업물로, 페이지별 컴포넌트를 구성하고 요청에 따라 알맞은 페이지를 반환해주는 과정은 쉽지 않았지만,<br>리액트와 많이 가까워질 수 있었던 프로젝트입니다.
+                      </p>
+                    </div><!-- //concept_bottom -->
+                  </div><!-- //concept_inner -->
+
+                  <div class="view_btn">
+                    <ul>
+                      <li class="reactCode_open code_open">View Code</li>
+                      <li><a href="https://yeonnngi.github.io/Aromatica/" target="_blank">View Live</a></li>
+                      <li><a href="https://github.com/yeonnngi/Aromatica.git" target="_blank">View Github</a>
+                      </li>
+                    </ul>
+                  </div><!-- //view_btn -->
+                </div><!-- //hdConcept -->
+              </div><!-- //bottomArea -->
+            </div><!-- //project_box -->
+          </div><!-- //project react -->
 
 
 
@@ -558,15 +716,19 @@
                         <li>2023. 05 (1주)</li>
                         <li class="insight">
                           <ul>
-                            <li>- &nbsp;폼태그를 활용하며 <span>입력값에 따른 다양한 옵션값 설정 및 제어방법</span>에<br>&nbsp;&nbsp;&nbsp;&nbsp;대해
-                              공부할 수 있었습니다.
-                            </li>
                             <li>
-                              - &nbsp;<span>value</span>와 <span>innerText</span>를 목적에 따라 구분하여 사용할 수 있게 되었습니다.
+                              <i class="fas fa-minus"></i>
+                              <p>폼태그를 활용하며 <span>입력값에 따른 다양한 옵션값 설정 및 제어방법</span>에 대해 공부할 수 있었습니다.</p>
                             </li>
+
                             <li>
-                              - &nbsp;<span>for문</span>과 <span>break</span>를 사용해 등록된 데이터베이스의 값과 입력값을 확인하는
-                              &nbsp;&nbsp;&nbsp;&nbsp;기능을 구현할 수 있었습니다.
+                              <i class="fas fa-minus"></i>
+                              <p><span>value</span>와 <span>innerText</span>를 목적에 따라 구분하여 사용할 수 있게 되었습니다.</p>
+                            </li>
+
+                            <li>
+                              <i class="fas fa-minus"></i>
+                              <p><span>for문</span>과 <span>break</span>를 사용해 등록된 데이터베이스의 값과 입력값을 확인하는 기능을 구현할 수 있었습니다.</p>
                             </li>
                           </ul>
                         </li><!-- //insight -->
@@ -587,8 +749,7 @@
                     <div class="concept_bottom">
                       <h3 class="concept_title">Concept</h3>
                       <p class="kor concept_detail">
-                        <span>폼태그</span>를 활용하여 구현한 로그인 시스템 프로젝트입니다.<br><br>폼태그 각 항목의 사용 용도를 구분하여 사용하였고, <span>입력 전/후
-                          입력값에 대한 인지의 정확성</span>을 위해<br>메시지 재입력을 위한 <span>클리어</span>, 다음 메시지 입력을 위한 <span>포커스 이동</span>
+                        <span>폼태그</span>를 활용하여 구현한 로그인 시스템 프로젝트입니다.<br><br>폼태그 각 항목의 사용 용도를 구분하여 사용하였고, <span>입력 전/후 입력값에 대한 인지의 정확성</span>을 위해<br>메시지 재입력을 위한 <span>클리어</span>, 다음 메시지 입력을 위한 <span>포커스 이동</span>
                         기능을 부여하여<br>사용자로 하여금 직관적인 확인이 가능하도록 구현하였습니다.
                       </p>
                     </div><!-- //concept_bottom -->
@@ -607,75 +768,6 @@
               </div><!-- //bottomArea -->
             </div><!-- //project_box -->
           </div><!-- //project loginSystem -->
-
-
-
-          <div class="react project">
-            <div class="project_box">
-              <div class="topArea">
-                <div class="topArea_inner">
-                  <div class="project_img top_left">
-                    <img src="" alt="react">
-                  </div>
-
-                  <div class="top_right kor">
-                    <div class="right_box">
-                      <ul class="right_title">
-                        <li>개발범위</li>
-                        <li>디바이스</li>
-                        <li>해상도</li>
-                        <li>개발언어</li>
-                        <li>소요시간</li>
-                        <li>인사이트</li>
-                      </ul>
-
-                      <ul class="right_detail">
-                        <li>메인 페이지,&nbsp; 서브 페이지,&nbsp; 디테일 페이지</li>
-                        <li><span class="reponsive">적응형</span>&nbsp; PC</li>
-                        <li>1420px</li>
-                        <li><span class="react lang">React</span>, &nbsp;<span class="boot lang">Bootstrap</span>
-                        </li>
-                        <li>2023. 07 (1주)</li>
-                        <li class="insight">
-                          <ul>
-                            <li>- &nbsp;추가예정
-                            </li>
-                          </ul>
-                        </li><!-- //insight -->
-                      </ul><!-- //left_detail -->
-                    </div><!-- //left_box -->
-                  </div><!-- //top_left -->
-                </div><!-- //topArea_inner -->
-              </div><!-- //topArea -->
-
-              <div class="bottomArea">
-                <div class="hdConcept concept">
-                  <div class="concept_inner">
-                    <div class="concept_top">
-                      <h1>React</h1>
-                      <h2 class="kor">적응형 웹사이트 리뉴얼</h2>
-                    </div><!-- //concept_top -->
-
-                    <div class="concept_bottom">
-                      <h3 class="concept_title">Concept</h3>
-                      <p class="kor concept_detail">추가예정</p>
-                    </div><!-- //concept_bottom -->
-                  </div><!-- //concept_inner -->
-
-                  <div class="view_btn">
-                    <ul>
-                      <li class="proposal_open">View Proposal</li>
-                      <li class="code_open">View Code</li>
-                      <li><a href="https://yeonnngi.github.io/Haagen-Daz_renewal/" target="_blank">View Live</a></li>
-                      <li><a href="https://github.com/yeonnngi/Haagen-Daz_renewal" target="_blank">View Github</a>
-                      </li>
-                    </ul>
-                  </div><!-- //view_btn -->
-                </div><!-- //hdConcept -->
-              </div><!-- //bottomArea -->
-            </div><!-- //project_box -->
-          </div><!-- //project react -->
-
         </div><!-- //content -->
       </div><!-- //container_inner -->
     </div><!-- //container contact -->
