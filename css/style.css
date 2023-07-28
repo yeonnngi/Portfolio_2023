@@ -1019,8 +1019,12 @@ p.txt_preview {
   font-size: 18px;
 }
 
-.gallery .portInner .desc span {
+.gallery .portInner .desc span.big {
   font-size: 30px;
+}
+
+.gallery .portInner .desc span.bold {
+  font-weight: bold;
 }
 
 .gallery .portInner .design_port {

@@ -841,6 +841,7 @@ illustrator.addEventListener('mouseout', () => {
 
 /* --------------- gallery --------------- */
 const portInner = document.querySelector('.container.gallery .container_inner .design_port');
+const portInnerImg = document.querySelector('.container.gallery .container_inner .design_port img');
 const topBtn = document.querySelector('.container.gallery .container_inner .topBtn');
 
 portInner.addEventListener('scroll', () => {
@@ -855,11 +856,9 @@ portInner.addEventListener('scroll', () => {
   }
 }); //topBtn_scroll_event
 
-topBtn.addEventListener('click', () => {
-  gsap.to(portInner, 0.5, {
-    scrollTo: 0
-  });
-});//topBtn_click_event
+function goingUp() {
+  portInner.scrollTop = 0; // For Safari
+}//topBtn_click_event
 
 
 /* --------------- contact --------------- */

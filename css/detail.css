@@ -307,6 +307,9 @@ html {
   width: 70%;
 }
 
+.react_modal .code_detail ul li.router .detail_img .site_img {
+  width: 20%;
+}
 
 .login_modal .code_detail ul li.terms .detail_img .site_img{
   width: 100%;
