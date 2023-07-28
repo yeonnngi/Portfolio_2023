@@ -268,12 +268,12 @@ html {
 }
 
 .lnb_preview {
-  width: 65px;
+  width: 60px;
   height: auto;
   position: absolute;
   top: 0px;
   /* bottom: 8%; */
-  left: 22%;
+  left: 25%;
   z-index: 100;
   transition: all .3s ease;
 }
@@ -1085,7 +1085,7 @@ p.txt_preview {
 }
 
 .contact .contactMe_txt .loveTalk {
-  font-size: 43px;
+  font-size: 40px;
   margin-top: 70px;
 }
 
