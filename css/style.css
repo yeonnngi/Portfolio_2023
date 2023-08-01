@@ -515,7 +515,7 @@ p.txt_preview {
 .about .content .profile_img {
   width: 440px;
   height: auto;
-  margin: 50px 0 0 100px;
+  margin: 45px 0 0 100px;
 }
 
 .about .content .profile_img img {
@@ -532,7 +532,7 @@ p.txt_preview {
 
 .about .content .profile_txt {
   font-weight: 600;
-  margin: 50px 0 0 180px;
+  margin: 45px 0 0 180px;
 }
 
 .about .content .profile_txt .aboutMe {
@@ -546,7 +546,7 @@ p.txt_preview {
 }
 
 .about .content .aboutMe_detail {
-  margin: 40px 0 0 28px;
+  margin: 35px 0 0 28px;
   display: flex;
   align-items: center;
 }
@@ -570,7 +570,7 @@ p.txt_preview {
   right: 0;
   left: 50%;
   transform: translateX(-30%);
-  bottom: 15px;
+  bottom: 16px;
 }
 
 .about .scroll_icon {
@@ -593,9 +593,7 @@ p.txt_preview {
   margin: 5px 0 20px 20px;
 }
 
-.about .page2 .exper_detail ul,
-.about .page2 .study_detail ul,
-.about .page2 .certificate_detail ul {
+.about .page2 .detail ul {
   padding: 30px 35px 0;
   box-sizing: border-box;
   width: 330px;
@@ -628,7 +626,7 @@ p.txt_preview {
 }
 
 .about .page2 li h3 {
-  font-size: 17px;
+  font-size: 16px;
   color: #1a4135;
 }
 
@@ -640,7 +638,7 @@ p.txt_preview {
 
 .about .page2 .exper_detail li p {
   padding: 2px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
 }
 

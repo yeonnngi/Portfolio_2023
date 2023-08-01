@@ -659,7 +659,7 @@ skills.addEventListener('click', () => {
   bar1.animate(0.95);
   bar2.animate(0.95);
   bar3.animate(0.65);
-  bar4.animate(0.7);
+  bar4.animate(0.65);
   bar5.animate(0.95);
   bar6.animate(0.85);
   bar7.animate(0.95);
