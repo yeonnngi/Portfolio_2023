@@ -985,7 +985,11 @@ p.txt_preview {
 }
 
 .projects .ballC_inner {
-  margin: 55px 0 0 42px;
+  margin: 43px 0 0 42px;
+}
+
+.projects .ballC_inner h3 {
+  line-height: 20px;
 }
 
 .projects .ballD {
