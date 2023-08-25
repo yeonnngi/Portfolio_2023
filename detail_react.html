@@ -85,7 +85,7 @@
 
             <li class="sort">
               <p>- 데이터베이스에 저장된 상품 정보를 동적 데이터로 생성하여 나열</p>
-              <p>- 동적 데이터로 나열된 상품 리스트를 sort와 filter 함수를 통해 신상품, 베스트, 상품명, 가격 내림차순, 오름차순의 정렬 기능 구현</p>
+              <p>- 동적 데이터로 나열된 상품 리스트로 sort와 filter 함수를 통해 신상품, 베스트, 상품명, 가격 내림차순, 오름차순의 정렬 기능 구현</p>
               <div class="detail_img">
                 <div class="site_img">
                   <img src="./images/ik_sort.gif" alt="ik_sort">
@@ -98,8 +98,8 @@
             </li><!-- //scroll -->
 
             <li class="proOption">
-              <p>- forEach와 index를 사용하여 해당 컬러가 선택되었다는 표시로 border가 보이게 구현 </p>
-              <p>- innerHTML과, src 링크를 사용하여 선택된 컬러의 컬러 텍스트와 상품이미지로 변경하게 구현 </p>
+              <p>- forEach와 index를 사용하여 해당 컬러가 선택되었다는 표시로 border가 나타나게 구현 </p>
+              <p>- innerHTML과, src 링크를 사용하여 선택된 컬러의 텍스트와 상품 이미지로 변경하게 구현 </p>
               <div class="detail_img">
                 <div class="site_img">
                   <img src="./images/ik_option_foreach.gif" alt="ik_option_foreach">
@@ -112,8 +112,9 @@
             </li><!-- //proOption -->
 
             <li class="gsap">
-              <p>- forEach와 index를 사용하여 해당 컬러가 선택되었다는 표시로 border가 보이게 구현 </p>
-              <p>- innerHTML과, src 링크를 사용하여 선택된 컬러의 컬러 텍스트와 상품이미지로 변경하게 구현 </p>
+              <p>- 좌/우 영역을 나누어 개별 스크롤이 되도록 구현</p>
+              <p>- 좌측 영역의 경우 일정 부분 이상을 스크롤 했을 때 상품 정보 탭메뉴가 Header 아래에 붙도록 레이아웃 구현</p>
+              <p>- gasp 플러그인을 사용하여 좌측 영역을 일정 영역 이상 스크롤할 경우 탑버튼이 나타나고 scrollTop을 사용한 스크롤 이벤트 적용</p>
               <div class="detail_img">
                 <div class="site_img">
                   <img src="./images/ik_gsap.gif" alt="ik_gsap">
@@ -126,8 +127,8 @@
             </li><!-- //gsap -->
 
             <li class="photoReview">
-              <p>- forEach와 index를 사용하여 해당 컬러가 선택되었다는 표시로 border가 보이게 구현 </p>
-              <p>- innerHTML과, src 링크를 사용하여 선택된 컬러의 컬러 텍스트와 상품이미지로 변경하게 구현 </p>
+              <p>- input 태그에 값을 입력할 시 동적 데이터로 리뷰가 생성되도록 구현</p>
+              <p>- URL.createObjectURL을 사용하여 사진을 포함한 리뷰가 등록될 수 있도록 구현</p>
               <div class="detail_img">
                 <div class="site_img">
                   <img src="./images/ik_photoReview.gif" alt="ik_photoReview">
@@ -173,7 +174,7 @@
         <div class="code_detail kor">
           <ul>
             <li class="slick hdCode_on">
-              <p>- Slick을 사용한 배너 슬라이드 영역 구성</p>
+              <p>- Slick을 사용하여 배너 슬라이드 영역 구성</p>
               <p>- 반응형 콘텐츠 해상도를 위한 picture 사용</p>
               <div class="detail_img">
                 <div class="site_img">
@@ -201,7 +202,7 @@
             </li><!-- //scroll -->
 
             <li class="ham">
-              <p>- addClass, removeClass와 index를 사용한 탭 메뉴 구현</p>
+              <p>- index와 addClass, removeClass를 사용하여 탭 메뉴 구현</p>
               <div class="detail_img">
                 <div class="site_img">
                   <img src="./images/hd_tab.gif" alt="hd_tab">
@@ -214,7 +215,7 @@
             </li><!-- //ham -->
 
             <li class="slider">
-              <p>- jQuery를 활용헌 플레이버 랭킹 슬라이더</p>
+              <p>- jQuery를 활용한 플레이버 랭킹 슬라이더</p>
               <div class="detail_img">
                 <div class="site_img">
                   <img src="./images/hd_slider.gif" alt="hd_slider">
@@ -266,7 +267,7 @@
 
 
             <li class="layout">
-              <p>- 상태에 따라 어떤 페이지가 영향을 받는지 페이지를 컴포넌트로 분리하고, 서로의 상태를 공유하여 상태변화를 확인할 수 있도록 레이아웃을 설계</p>
+              <p>- 상태에 따라 어떤 페이지가 영향을 받는지 페이지를 컴포넌트로 분리하고, 서로의 상태를 공유하여 상태 변화를 확인할 수 있도록 레이아웃을 설계</p>
               <div class="detail_img">
                 <div class="site_img">
                   <img src="./images/react_layout.gif" alt="login_totalTerms">
@@ -280,9 +281,9 @@
 
 
             <li class="store">
-              <p>- 상태관리 라이브러리인 Redux를 사용해 전역적인 상태 관리가 가능하도록 구현 (Redux의 state 상태가 저장되고 관리되는 저장소의 역할)</p>
+              <p>- 상태 관리 라이브러리인 Redux를 사용해 전역적인 상태 관리가 가능하도록 구현(Redux의 state 상태가 저장되고 관리되는 저장소의 역할)</p>
               <p>- createSlice 메서드를 활용하여 Reducer를 연결해 Store를 생성</p>
-              <p>- 상품 수량 변경 및 추가, 삭제와 같은 함수를 생성해 장바구니 저장소 기능 구현 및 상태변화 관리</p>
+              <p>- 상품 수량 변경 및 추가, 삭제와 같은 함수를 생성해 장바구니 저장소 기능 구현 및 상태 변화 관리</p>
 
               <div class="detail_img">
                 <div class="code_img">
@@ -293,7 +294,7 @@
 
 
             <li class="state">
-              <p>- 서로의 상태를 공유하여 상태변화를 확인하도록 구현</p>
+              <p>- 서로의 상태를 공유하여 상태 변화를 확인하도록 구현</p>
               <p>- onClick 이벤트를 통해 장바구니 버튼을 클릭하면 해당 물품의 수량을 상태로 전달하여 장바구니에 추가할 수 있도록 구현<br><br>&nbsp;&nbsp;&nbsp;<span>상태 변경이 필요한 이벤트 발생 <i class="fas fa-arrow-alt-circle-right"></i> 변경될 상태에 대한 정보가 담긴 Action 객체 생성 <i class="fas fa-arrow-alt-circle-right"></i> Action 객체는 Dispatch 함수의 인자로 전달<br>&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i> Dispatch 함수는 Action 객체를 Reducer 함수로 전달 <i class="fas fa-arrow-alt-circle-right"></i> Reducer 함수는 Action 객체의 값을 확인 후 그 값에 따라 전역 상태 저장소 Store의 상태를 변경<br>&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i> 상태가 변경되면 React는 화면을 다시 렌더링</span>
               </p>
               <div class="detail_img">
@@ -309,7 +310,7 @@
 
 
             <li class="cart">
-              <p>- Store에서 생성한 상품 수량 변경 및 추가, 삭제 등 함수를 가져와 장바구니 페이지에서 사용할 수 있도록 구현하여 상태관리를 통해 동적으로 데이터 구현</p>
+              <p>- Store에서 생성한 상품 수량 변경 및 추가, 삭제 등 함수를 가져와 장바구니 페이지에서 사용할 수 있도록 구현하여 상태 관리를 통해 동적으로 데이터 구현</p>
               <p>- 장바구니에 담긴 상품의 금액에 따라 배송비 여부가 달라지도록 구현</p>
               <p>- 장바구니에 담긴 상품 리스트의 길이를 기준으로 분기처리하여 Header 내 장바구니 아이콘에 개수가 표시되도록 구현<br>&nbsp;&nbsp;&nbsp;<span>(장바구니에 담긴 상품 리스트의 길이가 0 이상일 경우 list.length, 0일 경우 null 처리)</span></p>
               <div class="detail_img">
@@ -358,7 +359,7 @@
         <div class="code_detail kor">
           <ul>
             <li class="find lgCode_on">
-              <p>- for문과 break를 사용해 등록된 데이터베이스의 값과 입력값을 비교하여 ID 및 Password 찾기 기능 구현</p>
+              <p>- for문과 break를 사용해 등록된 데이터베이스의 값과 입력 값을 비교하여 ID 및 Password 찾기 기능 구현</p>
               <div class="detail_img">
                 <div class="site_img">
                   <img src="./images/login_findID.gif" alt="login_findID">
@@ -373,7 +374,7 @@
 
 
             <li class="terms">
-              <p>- 체크박스 상태 변화 값을 이용히여 and 연산자와 함께 전체 동의 체크박스 기능 구현 </p>
+              <p>- 체크박스 상태 변화 값을 이용하여 and 연산자와 함께 전체 동의 체크박스 기능 구현 </p>
               <p>- 필수 약관이 체크되지 않았을 때 안내 팝업이 나타날 수 있도록 구현</p>
               <div class="detail_img">
                 <div class="site_img">
@@ -389,7 +390,7 @@
 
             <li class="join">
               <p>- 폼 태그 각 항목의 사용 용도에 맞는 제어 방법을 사용하여 회원가입 양식 구성</p>
-              <p>- 사용자가 조건에 맞지 않게 입력했을 경우와 필수 항목을 입력하지 않은채 가입 버튼을 눌렀을 때 팝업창을 통해 재입력에 대한 안내 제공</p>
+              <p>- 사용자가 조건에 맞지 않게 입력했을 경우와 필수 항목을 입력하지 않은채 가입 버튼을 눌렀을 경우 팝업창을 통해 재입력에 대한 안내 제공</p>
               <div class="detail_img">
                 <div class="site_img">
                   <img src="./images/login_join.gif" alt="login_join">
@@ -589,7 +590,7 @@
                     <div class="concept_bottom">
                       <h3 class="concept_title">Concept</h3>
                       <p class="kor concept_detail">
-                        <span>반응형</span> 프로젝트 작업입니다.<br><br>우리와 친숙한 브랜드 중 운영되고 있는 사이트는 다소 친절하지 않은 브랜드를 선정하게 되었고,<br>하겐다즈 기존 웹 사이트를 리뉴얼한 프로젝트로 <span>기획안부터 디자인 시안, 프로토타입까지 모두 혼자 힘으로</span> 해보았던 작업입니다.<br>작업에 쓰인 이미지들은 <span>모두 직접 편집 및 재가공</span>한 이미지로 사용하였습니다.</p>
+                        <span>반응형</span> 프로젝트 작업입니다.<br><br>우리와 친숙한 브랜드 중 운영되고 있는 사이트는 다소 친절하지 않은 브랜드로 선정하였습니다.<br>하겐다즈 기존 웹 사이트를 리뉴얼한 프로젝트로 <span>기획안부터 디자인 시안, 프로토타입까지 모두 혼자 힘으로</span> 해보았던 작업입니다.<br>작업에 쓰인 이미지들은 <span>모두 직접 편집 및 재가공</span>한 이미지로 사용하였습니다.</p>
                     </div><!-- //concept_bottom -->
                   </div><!-- //concept_inner -->
 
@@ -722,7 +723,7 @@
                           <ul>
                             <li>
                               <i class="fas fa-minus"></i>
-                              <p>폼태그를 활용하며 <span>입력값에 따른 다양한 옵션값 설정 및 제어방법</span>에 대해 공부할 수 있었습니다.</p>
+                              <p>폼태그를 활용하며 <span>입력 값에 따른 다양한 옵션값 설정 및 제어방법</span>에 대해 공부할 수 있었습니다.</p>
                             </li>
 
                             <li>
@@ -732,7 +733,7 @@
 
                             <li>
                               <i class="fas fa-minus"></i>
-                              <p><span>for문</span>과 <span>break</span>를 사용해 등록된 데이터베이스의 값과 입력값을 확인하는 기능을 구현할 수 있었습니다.</p>
+                              <p><span>for문</span>과 <span>break</span>를 사용해 등록된 데이터베이스의 값과 입력 값을 확인하는 기능을 구현할 수 있었습니다.</p>
                             </li>
                           </ul>
                         </li><!-- //insight -->
@@ -753,8 +754,7 @@
                     <div class="concept_bottom">
                       <h3 class="concept_title">Concept</h3>
                       <p class="kor concept_detail">
-                        <span>폼태그</span>를 활용하여 구현한 로그인 시스템 프로젝트입니다.<br><br>폼태그 각 항목의 사용 용도를 구분하여 사용하였고, <span>입력 전/후 입력값에 대한 인지의 정확성</span>을 위해<br>메시지 재입력을 위한 <span>클리어</span>, 다음 메시지 입력을 위한 <span>포커스 이동</span>
-                        기능을 부여하여<br>사용자로 하여금 직관적인 확인이 가능하도록 구현하였습니다.
+                        <span>폼태그</span>를 활용하여 구현한 로그인 시스템 프로젝트입니다.<br><br>폼태그 각 항목의 사용 용도를 구분하여 사용하였고, <span>입력 전/후 입력 값에 대한 인지의 정확성을 부여하여<br>사용자로 하여금 직관적인 확인이 가능하도록 구현하였습니다.
                       </p>
                     </div><!-- //concept_bottom -->
                   </div><!-- //concept_inner -->
